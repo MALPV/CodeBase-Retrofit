@@ -9,18 +9,19 @@ import com.malpvaplicaciones.code_retrofit.data.network.model.Result
 import com.malpvaplicaciones.code_retrofit.usecases.GetBrawlersUseCase
 import kotlinx.coroutines.launch
 
-class MainVM: ViewModel() {
+class MainVM(
+    private val getBrawlersUseCase: GetBrawlersUseCase = GetBrawlersUseCase()
+): ViewModel() {
 
     private val _brawlersList = MutableLiveData<MutableList<Brawler>>()
     val brawlersList: LiveData<MutableList<Brawler>> get() = _brawlersList
-
 
     private val _messageError = MutableLiveData<String>()
     val messageError: LiveData<String> get() = _messageError
 
     fun getBrawlers(){
        viewModelScope.launch {
-           when(val result = GetBrawlersUseCase.invoke()) {
+           when(val result = getBrawlersUseCase.invoke()) {
                is Result.Success<MutableList<Brawler>> ->{
                    _brawlersList.value = result.data ?: mutableListOf()
                }

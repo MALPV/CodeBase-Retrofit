@@ -6,8 +6,10 @@ import com.malpvaplicaciones.code_retrofit.data.network.model.Result
 import com.malpvaplicaciones.code_retrofit.repository.BrawlersRepository
 import retrofit2.Response
 
-object GetBrawlersUseCase {
+class GetBrawlersUseCase(
+    private val repository: BrawlersRepository = BrawlersRepository()
+) {
 
     suspend fun invoke(): Result<MutableList<Brawler>> =
-        BrawlersRepository.getBrawlers()
+        repository.getBrawlers()
 }

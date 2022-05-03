@@ -9,10 +9,9 @@ import java.lang.Exception
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
-object BrawlersRepository {
-
-    private val apiService = ApiService()
-
+class BrawlersRepository(
+    private val apiService:ApiService = ApiService()
+) {
     suspend fun getBrawlers(): Result<MutableList<Brawler>> {
         var brawlersLocal = DbDummy.getLocalBrawlers()
         return if (brawlersLocal.size == 0) {
