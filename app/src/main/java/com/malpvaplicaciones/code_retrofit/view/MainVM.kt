@@ -14,6 +14,7 @@ class MainVM: ViewModel() {
     private val _brawlersList = MutableLiveData<MutableList<Brawler>>()
     val brawlersList: LiveData<MutableList<Brawler>> get() = _brawlersList
 
+
     private val _messageError = MutableLiveData<String>()
     val messageError: LiveData<String> get() = _messageError
 
@@ -29,4 +30,5 @@ class MainVM: ViewModel() {
            }
        }
     }
+
 }

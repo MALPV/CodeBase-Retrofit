@@ -14,14 +14,14 @@ object ApiServiceBuilder {
     //region Service Constants
     private const val BASE_URL = "https://api.brawlstars.com/v1/"
 
-    const val AUTH_HEADER = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTM" +
-            "xOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJh" +
-            "dWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjI5Njk4ZWIzLTVjNjItNDljMi1iMDUwLT" +
-            "IxZTdmZDI0N2MyMSIsImlhdCI6MTY0NzczNDQ1Mywic3ViIjoiZGV2ZWxvcGVyLzIzYTcyYjJh" +
-            "LTI0ZjctMjM4Ni03ZmQxLTZhNWEzNjY1ZDlmNyIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sIm" +
-            "xpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9" +
-            "LHsiY2lkcnMiOlsiMjAxLjE4OS4yMDguMTc1Il0sInR5cGUiOiJjbGllbnQifV19.UrsQtJrFS" +
-            "vDF-1QTHe4Kf_AjSZaX8dJODk1OIrCgFMEMQ0GsN4uuqy1JSoM6llgBkiUeXvIUeofs62sOy9w5Zw"
+    const val AUTH_HEADER = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LT" +
+            "AwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcm" +
+            "NlbGw6Z2FtZWFwaSIsImp0aSI6IjVkMDAwNDAxLTBiNWUtNDFlYS04MjFmLWFkNjMxMWU4MDgxMiIsIml" +
+            "hdCI6MTY1MTU5NzQ1Mywic3ViIjoiZGV2ZWxvcGVyLzIzYTcyYjJhLTI0ZjctMjM4Ni03ZmQxLTZhNWEz" +
+            "NjY1ZDlmNyIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blc" +
+            "i9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMjAxLjE4OS4xOTUuMjE1Il0sIn" +
+            "R5cGUiOiJjbGllbnQifV19.xmVyQdeqif8eU0x8RNhyNSGneC3C51z5UPbMQ4IV3jksn1iYGCXStpETnB" +
+            "21E4ByuKk4FWiGKiPk6aJriwiYmA"
 
     const val GET_BRAWLERS = "brawlers"
     //endregion

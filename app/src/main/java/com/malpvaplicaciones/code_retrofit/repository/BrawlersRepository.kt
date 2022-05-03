@@ -20,14 +20,14 @@ object BrawlersRepository {
                 brawlersLocal = apiService.getBrawlersRemote()
                 DbDummy.saveBrawlersInDb(brawlersLocal)
                 Result.Success(brawlersLocal)
-            }catch (e: UnknownHostException){
+            } catch (e: UnknownHostException) {
                 Result.Error(Exception("Verifique la conexión a internet e intente nuevamente."))
-            }catch (e: SocketTimeoutException){
+            } catch (e: SocketTimeoutException) {
                 Result.Error(Exception("Verifique la conexión a internet e intente nuevamente."))
-            }catch (e: IOException){
+            } catch (e: IOException) {
                 Result.Error(Exception("Error inesperado, contacte al administrador."))
             }
-        }else
+        } else
             Result.Success(brawlersLocal)
     }
 }

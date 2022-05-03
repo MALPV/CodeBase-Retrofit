@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         vm.brawlersList.observe(this, observerListBrawlers)
 
         val observerMessageError =
-            Observer<String>{ message ->
+            Observer<String> { message ->
                 Log.i(TAG, "__________________________ERROR___________________________")
                 Log.i(TAG, message)
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
@@ -47,5 +47,4 @@ class MainActivity : AppCompatActivity() {
             vm.getBrawlers()
         }
     }
-
 }
