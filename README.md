@@ -8,6 +8,10 @@ _Aplicando arquitectura limpia y MVVM_
 
 _Para probar la aplicación deberá tener instalado [Android Studio](https://developer.android.com/)_
 
+## ScreenShot 📲
+
+![View Home](https://github.com/MALPV/CodeBase-Retrofit/blob/main/screenshots/Screenshot_home.png)
+
 ## Construido con 🛠️
 
 * [Android Studio](https://developer.android.com/) - Proporciona las herramientas más rápidas
@@ -18,7 +22,7 @@ eso hace que los desarrolladores sean más felices.
 
 * [Cliente Retrofit](https://square.github.io/retrofit/) - Un cliente HTTP seguro para Android y Java.
 
-* [API Brawl Stars](https://brawlapi.com/#/) - ¡BrawlAPI le permite acceder a información sobre Brawl 
+* [Brawl API](https://brawlapi.com/#/) - ¡BrawlAPI le permite acceder a información sobre Brawl 
 Stars sin claves ni límites de velocidad!
 
 ## Autores ✒️
