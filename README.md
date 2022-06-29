@@ -1,16 +1,12 @@
 # CodeBase-Retrofit
 
-_Codigo base para la implementación y uso de Retrofit_
+_Código base para la implementación y uso de Retrofit en el consumo de una API_
 
 _Aplicando arquitectura limpia y MVVM_
 
 ## Comenzando 🚀
 
 _Para probar la aplicación deberá tener instalado [Android Studio](https://developer.android.com/)_
-
-_Además deberá crear una cuenta y su propio token en [Brawl Stars API](https://developer.brawlstars.com/#/)_
-
-_Posteriormente cambiar el token ubicado en el archivo ApiServiceBuilder.kt por el token que ha creado_
 
 ## Construido con 🛠️
 
@@ -22,8 +18,8 @@ eso hace que los desarrolladores sean más felices.
 
 * [Cliente Retrofit](https://square.github.io/retrofit/) - Un cliente HTTP seguro para Android y Java.
 
-* [API Brawl Stars](https://developer.brawlstars.com/#/) - Cree experiencias increíbles con acceso a
-datos del juego Brawl stars precisos y seguros.
+* [API Brawl Stars](https://brawlapi.com/#/) - ¡BrawlAPI le permite acceder a información sobre Brawl 
+Stars sin claves ni límites de velocidad!
 
 ## Autores ✒️
 
