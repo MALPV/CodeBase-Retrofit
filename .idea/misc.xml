@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/motor/Documents/Proyectos Android/Code Sample/Code-Retrofit/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/motor/Documents/Proyectos Android/Code Sample/Code-Retrofit/app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.23" />
+        <entry key="..\:/Users/motor/Documents/Proyectos Android/Code Sample/Code-Retrofit/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/motor/Documents/Proyectos Android/Code Sample/Code-Retrofit/app/src/main/res/layout/item_brawl.xml" value="0.536" />
+        <entry key="..\:/Users/motor/Documents/Proyectos Android/Code Sample/Code-Retrofit/app/src/main/res/layout/item_brawler.xml" value="0.4" />
       </map>
     </option>
   </component>

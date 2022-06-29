@@ -6,8 +6,11 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.malpvaplicaciones.code_retrofit.data.network.model.Brawler
 import com.malpvaplicaciones.code_retrofit.databinding.ActivityMainBinding
+import com.malpvaplicaciones.code_retrofit.view.adapter.AdapterBrawlerItemList
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,17 +21,18 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val vm : MainVM by viewModels()
 
+    private lateinit var adapterBrawler: AdapterBrawlerItemList
+    private lateinit var linearLayoutManager: RecyclerView.LayoutManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        linearLayoutManager = LinearLayoutManager(this)
 
         val observerListBrawlers =
             Observer<MutableList<Brawler>>{ brawlers ->
-                brawlers.forEach { brawler ->
-                    Log.i(TAG, "__________________________BRAWLER___________________________")
-                    Log.i(TAG, "id ${brawler.id} name ${brawler.name}")
-                }
+                populateRecyclerView(brawlers)
                 Toast.makeText(this, "Cantidad de brawlers ${brawlers.size}", Toast.LENGTH_SHORT).show()
             }
 
@@ -43,8 +47,16 @@ class MainActivity : AppCompatActivity() {
 
         vm.messageError.observe(this, observerMessageError)
 
-        binding.button.setOnClickListener {
+        binding.btnRefresh.setOnClickListener {
             vm.getBrawlers()
+        }
+    }
+
+    private fun populateRecyclerView(brawlers: MutableList<Brawler>){
+        adapterBrawler = AdapterBrawlerItemList(brawlers)
+        binding.listBrawlers.apply {
+            layoutManager = linearLayoutManager
+            adapter = adapterBrawler
         }
     }
 }

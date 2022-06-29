@@ -38,6 +38,7 @@ ext{
     retrofitVersion = '2.9.0'
     gsonVersion = '2.9.0'
     okhttpVersion = '4.9.3'
+    picassoVersion = '2.8'
 }
 
 dependencies {
@@ -62,4 +63,6 @@ dependencies {
     // OkHttp
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
 
+    // Picasso
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
 }
