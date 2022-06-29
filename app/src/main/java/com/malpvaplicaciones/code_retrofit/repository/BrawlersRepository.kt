@@ -20,7 +20,7 @@ class BrawlersRepository(
                 DbDummy.saveBrawlersInDb(brawlersLocal)
                 Result.Success(brawlersLocal)
             } catch (e: UnknownHostException) {
-                Result.Error(Exception("Verifique la conexión a internet e intente nuevamente."))
+                Result.Error(Exception("Sin conexión a internet, verifique e intente nuevamente."))
             } catch (e: SocketTimeoutException) {
                 Result.Error(Exception("Verifique la conexión a internet e intente nuevamente."))
             } catch (e: IOException) {

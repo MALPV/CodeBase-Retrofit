@@ -8,5 +8,20 @@ data class Brawler(
     val id: Int,
 
     @SerializedName("name")
-    val name: String
+    val name: String,
+
+    @SerializedName("description")
+    val description: String,
+
+    @SerializedName("link")
+    val extraInfo: String,
+
+    @SerializedName("imageUrl")
+    val image: String,
+
+    @SerializedName("class")
+    val type: Type,
+
+    @SerializedName("rarity")
+    val rarity: Rarity
 )

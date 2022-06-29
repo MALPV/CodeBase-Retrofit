@@ -2,8 +2,11 @@ package com.malpvaplicaciones.code_retrofit.data.network.model
 
 import com.google.gson.annotations.SerializedName
 
-data class BrawlersResponse(
+data class Type(
 
-    @SerializedName("items")
-    val brawlers: MutableList<Brawler>
+    @SerializedName("id")
+    val id: Int,
+
+    @SerializedName("name")
+    val name: String
 )
