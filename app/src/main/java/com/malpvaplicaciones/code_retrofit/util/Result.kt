@@ -1,4 +1,4 @@
-package com.malpvaplicaciones.code_retrofit.data.network.model
+package com.malpvaplicaciones.code_retrofit.util
 
 sealed class Result<out R> {
     data class Success<out T>(val data: T?) : Result<T>()

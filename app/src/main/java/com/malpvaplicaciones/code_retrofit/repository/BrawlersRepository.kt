@@ -1,7 +1,7 @@
 package com.malpvaplicaciones.code_retrofit.repository
 
 import com.malpvaplicaciones.code_retrofit.data.network.model.Brawler
-import com.malpvaplicaciones.code_retrofit.data.network.model.Result
+import com.malpvaplicaciones.code_retrofit.util.Result
 import com.malpvaplicaciones.code_retrofit.data.db.DbDummy
 import com.malpvaplicaciones.code_retrofit.data.network.ApiService
 import java.io.IOException
